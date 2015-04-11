@@ -1,0 +1,21 @@
+Menu="Utilities"
+Title="Useful Links"
+---
+<?PHP
+/* Copyright 2015 Squid Software
+*/
+?>
+<script>
+function changeOutput(value) {
+	document.getElementById("myFrame").src = value;
+}
+</script>
+
+General Links:
+<select onchange="changeOutput(value)">
+<option value="http://lime-technology.com">Lime Technology Website</option>
+<option value="https://www.docker.com/whatisdocker/">What is Docker?</option>
+<option value="http://lime-technology.com/wiki/index.php/UnRAID_Wiki">unRaid Wiki</option>
+</select>
+
+<iframe id="myFrame" src="" height=600 width=100%></iframe>
